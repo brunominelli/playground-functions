@@ -1,9 +1,13 @@
 /* Bruno Minelli - T19 - A */
 // Desafio 1
-function compareTrue() {
+function compareTrue(firstBool, secondBool) {
   // seu código aqui
+  let result = false;
+  if (firstBool === true && secondBool === true)result = true; else result = false;
+  return result;
 }
 
+console.log(compareTrue(true, true));
 // Desafio 2
 function calcArea() {
   // seu código aqui
