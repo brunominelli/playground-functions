@@ -7,10 +7,10 @@ function compareTrue(firstBool, secondBool) {
   return result;
 }
 
-console.log(compareTrue(true, true));
 // Desafio 2
-function calcArea() {
+function calcArea(base, altura) {
   // seu código aqui
+  return (base * altura) / 2;
 }
 
 // Desafio 3
