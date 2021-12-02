@@ -1,3 +1,4 @@
+/* Bruno Minelli - T19 - A */
 // Desafio 1
 function compareTrue() {
   // seu código aqui
