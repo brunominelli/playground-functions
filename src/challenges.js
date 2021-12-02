@@ -32,6 +32,7 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
+// eslint-disable-next-line sonarjs/cognitive-complexity
 function highestCount(array) {
   // seu código aqui
   let highNumber = 0;
@@ -51,9 +52,28 @@ function highestCount(array) {
 
   return countHighNumber;
 }
+
 // Desafio 7
-function catAndMouse() {
+// eslint-disable-next-line complexity
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  let message;
+  let positionCat1 = mouse - cat1;
+  let positionCat2 = mouse - cat2;
+
+  if (positionCat1 < 0) {
+    positionCat1 = -positionCat1;
+  } else if (positionCat2 < 0) {
+    positionCat2 = -positionCat2;
+  }
+  if (positionCat1 > positionCat2) {
+    message = 'cat2';
+  } else if (positionCat2 > positionCat1) {
+    message = 'cat1';
+  } else if (positionCat1 === positionCat2) {
+    message = 'os gatos trombam e o rato foge';
+  }
+  return message;
 }
 
 // Desafio 8
