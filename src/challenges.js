@@ -53,8 +53,6 @@ function highestCount(array) {
   return countHighNumber;
 }
 
-console.log(highestCount([-2, -2, -1]));
-
 // Desafio 7
 // eslint-disable-next-line complexity
 function catAndMouse(mouse, cat1, cat2) {
