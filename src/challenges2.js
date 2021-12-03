@@ -1,7 +1,20 @@
 /* Bruno Minelli - T19 - A */
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, name) {
+  let message = 'Vazio!';
+  let newArray = [];
+
+  if (array.length === 0) {
+    return message;
+  }
+
+  array.sort();
+  for (let index = 0; index < array.length; index += 1) {
+    let object = { tech: array[index], name};
+    newArray.push(object);
+  }
+
+  return newArray;
 }
 
 // Desafio 11
