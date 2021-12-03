@@ -50,13 +50,30 @@ function generatePhoneNumber(array) {
 }
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+  if (lineA > lineB + lineC || lineB > lineA + lineC || lineC > lineA + lineB) {
+    return false;
+  }
+  return true;
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(string) {
   // seu código aqui
+  let r = /\d+/g;
+  let numbers = string.match(r);
+  let glasses = 0;
+  for (let index = 0; index < numbers.length; index += 1) {
+    glasses += parseInt(numbers[index], 10);
+  }
+
+  let word = 'copo';
+  if (glasses > 1) {
+    word = 'copos';
+  }
+  let message = `${glasses} ${word} de água`;
+  return message;
 }
 
 module.exports = {
