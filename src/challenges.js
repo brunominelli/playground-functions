@@ -35,7 +35,7 @@ function footballPoints(wins, ties) {
 // eslint-disable-next-line sonarjs/cognitive-complexity
 function highestCount(array) {
   // seu código aqui
-  let highNumber = 0;
+  let highNumber = -999;
   let countHighNumber = 0;
 
   for (let i = 0; i < array.length; i += 1) {
@@ -52,6 +52,8 @@ function highestCount(array) {
 
   return countHighNumber;
 }
+
+console.log(highestCount([-2, -2, -1]));
 
 // Desafio 7
 // eslint-disable-next-line complexity
