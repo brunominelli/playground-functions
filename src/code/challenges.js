@@ -1,7 +1,6 @@
 /* Bruno Minelli - T19 - A */
 // Desafio 1
 function compareTrue(firstBool, secondBool) {
-  // seu código aqui
   let result = false;
   if (firstBool === true && secondBool === true)result = true; else result = false;
   return result;
@@ -9,13 +8,11 @@ function compareTrue(firstBool, secondBool) {
 
 // Desafio 2
 function calcArea(base, altura) {
-  // seu código aqui
   return (base * altura) / 2;
 }
 
 // Desafio 3
 function splitSentence(string) {
-  // seu código aqui
   string = string.split(' ');
   return string;
 }
@@ -27,14 +24,11 @@ function concatName(string) {
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  // seu código aqui
   return (3 * wins) + ties;
 }
 
 // Desafio 6
-// eslint-disable-next-line sonarjs/cognitive-complexity
 function highestCount(array) {
-  // seu código aqui
   let highNumber = -999;
   let countHighNumber = 0;
 
@@ -54,9 +48,7 @@ function highestCount(array) {
 }
 
 // Desafio 7
-// eslint-disable-next-line complexity
 function catAndMouse(mouse, cat1, cat2) {
-  // seu código aqui
   let message;
   let positionCat1 = mouse - cat1;
   let positionCat2 = mouse - cat2;
@@ -77,9 +69,7 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-// eslint-disable-next-line complexity
 function fizzBuzz(array) {
-  // seu código aqui
   let message = [];
   for (let i = 0; i < array.length; i += 1) {
     if (array[i] % 3 === 0) {
@@ -99,9 +89,7 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-// eslint-disable-next-line complexity
 function encode(string) {
-  // seu código aqui
   let newString = '';
     for (let index in string) {
       if (string[index] === 'a') {
@@ -121,9 +109,7 @@ function encode(string) {
   return newString;
 }
 
-// eslint-disable-next-line complexity
 function decode(string) {
-  // seu código aqui
   let newString = '';
   for (let index in string) {
     if (string[index] === '1') {
