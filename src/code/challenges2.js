@@ -1,4 +1,3 @@
-/* eslint-disable max-lines-per-function */
 /* Bruno Minelli - T19 - A */
 // Desafio 10
 function techList(array, name) {
@@ -29,9 +28,7 @@ function checkPhoneNumber(array, digit) {
   return repeat;
 }
 
-// eslint-disable-next-line complexity
 function generatePhoneNumber(array) {
-  // seu código aqui
   let message = '';
   let phone = `(${array.slice(0, 2).join('')}) ${array.slice(2, 7).join('')}-${array.slice(7, 11).join('')}`;
   if (array.length !== 11) {
